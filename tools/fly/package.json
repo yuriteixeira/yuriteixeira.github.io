@@ -1,0 +1,21 @@
+{
+  "name": "fly",
+  "version": "1.0.0",
+  "description": "Fly - Find a cheaper flight",
+  "main": "js/main.js",
+  "scripts": {
+    "test": "jasmine",
+    "build:js": "browserify js/main.js -o dist/js/bundle.js",
+    "build": "npm run build:js",
+    "build:watch": "watch 'npm run build' js spec",
+    "prebuild": "npm test"
+  },
+  "author": "Yuri Teixeira",
+  "license": "MIT",
+  "dependencies": {
+    "jasmine": "^2.3.2",
+    "watch": "^0.16.0",
+    "browserify": "^11.2.0"
+  },
+  "keywords": []
+}
