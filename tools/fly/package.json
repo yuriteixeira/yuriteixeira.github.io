@@ -5,6 +5,7 @@
   "main": "js/main.js",
   "scripts": {
     "test": "jasmine",
+    "test:watch": "watch 'npm test' js spec",
     "build:js": "browserify js/main.js -o dist/js/bundle.js",
     "build": "npm run build:js",
     "build:watch": "watch 'npm run build' js spec",
