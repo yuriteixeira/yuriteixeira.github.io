@@ -38,5 +38,33 @@ Fly.prototype.getSearchUrls = function (startDate, durationDays, variationDays, 
   return urls;
 };
 
+Fly.prototype.setupView = function (win, containerId) {
+  var doc = win.document;
+  var formEl = doc.querySelector(containerId + " form");
+  var startEl = doc.querySelector(containerId + " form .start");
+  var durationEl = doc.querySelector(containerId + " form .duration");
+  var variationEl = doc.querySelector(containerId + " form .variation");
+  var originEl = doc.querySelector(containerId + " form .origin");
+  var destinyEl = doc.querySelector(containerId + " form .destiny");
+
+  formEl.addEventListener("submit", function (evt) {
+    evt.preventDefault();
+
+    var urls = this.getSearchUrls(
+      new Date(startEl.value),
+      durationEl.value,
+      variationEl.value,
+      originEl.value,
+      destinyEl.value
+    );
+
+    for (var i = 0; i < urls.length; i++) {
+      win.open(urls[i]);
+    };
+
+    win.focus();
+  }.bind(this));
+};
+
 
 module.exports = Fly;
