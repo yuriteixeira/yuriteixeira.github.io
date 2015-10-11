@@ -1,0 +1,23 @@
+#fly h1, #fly p {
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+#fly h1 span {
+  font-size: .35em
+}
+
+#fly label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+#fly span {
+  display: block;
+}
+
+#fly button {
+  display: block;
+  width: 100%;
+  font-size: 1em;
+}

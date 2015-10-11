@@ -6,13 +6,55 @@
   <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="/css/main.css">
   <link rel="stylesheet" href="dist/css/main.css">
-  <title>Fly - Find a cheaper flight</title>
+  <title>Fly - Opens flight's search tabs for you</title>
 </head>
 
 <body>
-  <header>
-    <h1>Fly - Find a cheaper flight</h1>
-  </header>
+  <div id="fly">
+    <header>
+      <h1>
+        Fly
+        <span>(Opens flight's search tabs for you)</span>
+      </h1>
+    </header>
+
+    <form>
+      <label>
+        <span>Start Date</span>
+        <input type="date" class="start">
+      </label>
+
+      <label>
+        <span>Start Flexibility (in days)</span>
+        <input type="number" class="variation">
+      </label>
+
+      <label>
+        <span>Trip Duration (in days)</span>
+        <input type="number" class="duration">
+      </label>
+
+      <label>
+        <span>Origin</span>
+        <select class="origin">
+          <option value="saoa">São Paulo (All Airports)</option>
+          <option value="stoc">Stockholm (All Airports)</option>
+        </select>
+      </label>
+
+      <label>
+        <span>Destiny</span>
+        <select class="destiny">
+          <option value="saoa">São Paulo (All Airports)</option>
+          <option value="stoc">Stockholm (All Airports)</option>
+        </select>
+      </label>
+
+      <button>
+        Open Search Tabs
+      </button>
+    </form>
+  </div>
 
   <!-- Google Analytics -->
   <script>
