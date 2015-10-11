@@ -1,6 +1,6 @@
 'use strict';
 
 var Fly = require('./fly.js');
-var fly = new Fly(console);
+var fly = new Fly();
 
-fly.start();
+fly.setupView(window, "#fly");
