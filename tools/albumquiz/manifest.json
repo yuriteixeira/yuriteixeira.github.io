@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Album Quiz! (by Yuri Teixeira)",
+  "name": "Are you music nerd? Are you not? Doesn't matter! If you like music, this game is for you :)",
   "icons": [
     {
       "src": "favicon.ico",
